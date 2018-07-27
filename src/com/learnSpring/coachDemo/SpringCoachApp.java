@@ -10,7 +10,9 @@ public class SpringCoachApp {
         Coach theCoach = context.getBean("myCoach", Coach.class);
 
         //call methods on the bean
-        System.out.print(theCoach.getDailyWorkout());;
+        System.out.println(theCoach.getDailyWorkout());;
+        System.out.println(theCoach.getDailyFortune());
+
 
         //close app
         context.close();
