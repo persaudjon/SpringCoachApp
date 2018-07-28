@@ -8,10 +8,14 @@
     http://www.springframework.org/schema/context/spring-context.xsd">
 
     <!-- Define your beans here -->
+    <!-- Dependencies -->
     <bean id="happyFortune" class="com.learnSpring.coachDemo.HappFortune"></bean>
+    <bean id="baseballDrills" class="com.learnSpring.coachDemo.BaseballPracticeDrills"></bean>
 
     <bean id="myCoach" class="com.learnSpring.coachDemo.BaseballCoach">
+        <!-- Args for contructor -->
         <constructor-arg ref = "happyFortune"></constructor-arg>
+        <property name="baseballDrills" ref="baseballDrills"></property>
     </bean>
     
 </beans>

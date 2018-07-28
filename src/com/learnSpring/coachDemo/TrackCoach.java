@@ -17,6 +17,11 @@ public class TrackCoach implements Coach {
 	public String getDailyFortune() {
 		return fortuneService.getFortune();
 	}
+
+	@Override
+	public PracticeDrillService getBaseballDrills() {
+		return null;
+	}
 }
 
 

@@ -11,7 +11,12 @@ public class SpringCoachApp {
 
         //call methods on the bean
         System.out.println(theCoach.getDailyWorkout());;
+
+        //Dependency injection
         System.out.println(theCoach.getDailyFortune());
+
+        //Setter Injection
+        System.out.println(theCoach.getBaseballDrills().getPracticeDrills());
 
 
         //close app

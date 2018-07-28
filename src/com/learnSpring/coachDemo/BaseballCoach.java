@@ -3,6 +3,7 @@ package com.learnSpring.coachDemo;
 public class BaseballCoach implements Coach {
 
 	FortuneService fortune;
+	PracticeDrillService baseballDrills;
 
 
 
@@ -20,6 +21,13 @@ public class BaseballCoach implements Coach {
         return fortune.getFortune();
     }
 
+	public void setBaseballDrills(PracticeDrillService baseballDrills) {
+		this.baseballDrills = baseballDrills;
+	}
+
+    public PracticeDrillService getBaseballDrills() {
+        return baseballDrills;
+    }
 }
 
 
