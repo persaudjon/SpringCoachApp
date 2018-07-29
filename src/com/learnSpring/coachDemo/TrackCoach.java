@@ -22,6 +22,16 @@ public class TrackCoach implements Coach {
 	public PracticeDrillService getBaseballDrills() {
 		return null;
 	}
+
+	@Override
+	public void setEmailAddress(String emailAddress) {
+
+	}
+
+	@Override
+	public void setTeamName(String teamName) {
+
+	}
 }
 
 

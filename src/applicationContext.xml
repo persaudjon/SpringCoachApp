@@ -16,6 +16,8 @@
         <!-- Args for contructor -->
         <constructor-arg ref = "happyFortune"></constructor-arg>
         <property name="baseballDrills" ref="baseballDrills"></property>
+        <property name="emailAddress" value="CoachK@theteamwins.com"></property>
+        <property name="teamName" value="Hallow Headed Harpies"></property>
     </bean>
     
 </beans>

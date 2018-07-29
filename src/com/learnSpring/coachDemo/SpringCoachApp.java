@@ -17,8 +17,7 @@ public class SpringCoachApp {
 
         //Setter Injection
         System.out.println(theCoach.getBaseballDrills().getPracticeDrills());
-
-
+        
         //close app
         context.close();
     }

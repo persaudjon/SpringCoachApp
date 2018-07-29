@@ -7,5 +7,9 @@ public interface Coach {
 	public String getDailyFortune();
 
 	public PracticeDrillService getBaseballDrills();
+
+	public void setEmailAddress(String emailAddress);
+
+	public void setTeamName(String teamName);
 	
 }
