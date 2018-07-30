@@ -8,6 +8,8 @@
     http://www.springframework.org/schema/context/spring-context.xsd">
 
     <!-- Define your beans here -->
+    <!--Property Files -->
+    <context:property-placeholder location="sport.properties"></context:property-placeholder>
     <!-- Dependencies -->
     <bean id="happyFortune" class="com.learnSpring.coachDemo.HappFortune"></bean>
     <bean id="baseballDrills" class="com.learnSpring.coachDemo.BaseballPracticeDrills"></bean>
@@ -16,8 +18,8 @@
         <!-- Args for contructor -->
         <constructor-arg ref = "happyFortune"></constructor-arg>
         <property name="baseballDrills" ref="baseballDrills"></property>
-        <property name="emailAddress" value="CoachK@theteamwins.com"></property>
-        <property name="teamName" value="Hallow Headed Harpies"></property>
+        <property name="emailAddress" value="${baseballcoach.email}"></property>
+        <property name="teamName" value="${baseballcoach.teamname}"></property>
     </bean>
     
 </beans>
